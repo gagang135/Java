@@ -32,10 +32,12 @@ System.out.println("enter a number:");
     
     while(no>9){
         no=s1.sum(no);
+    }
+    while(copy>9){
         copy=s1.square(copy);
     }
     System.out.println("the sum of "+copy2+" is "+no);
-    System.out.println("the sum of square of "+copy2+" is "+no);
+    System.out.println("the sum of square of "+copy2+" is "+copy);
 
 }
 }
