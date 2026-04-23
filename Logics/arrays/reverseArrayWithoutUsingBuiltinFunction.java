@@ -10,16 +10,15 @@ class reverseArrayWithoutUsingBuiltinFunction{
      for (int i = 0; i < n; i++) {
          arr[i]=sc.nextInt();
      }
-     int i=0,j=n-1;
-     while(i<j){
-        int t=arr[i];
-        arr[i]=arr[j];
-        arr[j]=t;
-        i++;
-        j--;
+
+     int temp[]=new int[n];
+     int j=0;
+     for(int i=n-1;i>=0;i--){
+        temp[j++]=arr[i];
      }
-     for(int k=0;k<n;k++){
-        System.out.print(arr[k]+" ");
+    System.out.println("array after reverse:\n");
+     for(int i=0;i<n;i++){
+        System.out.print(temp[i]+" ");
      }
  }
 }
